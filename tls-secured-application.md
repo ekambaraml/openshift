@@ -86,7 +86,7 @@
    
    openssl req -new -key tls.key -out tls.csr
    
-```
+   ```
    You are about to be asked to enter information that will be incorporated
    into your certificate request.
    What you are about to enter is what is called a Distinguished Name or a DN.
@@ -107,16 +107,16 @@
    A challenge password []:demo
    An optional company name []:IBM
 
-```
+   ```
 
-openssl x509 -req -in tls.csr -CA myCA.pem -CAkey myCA.key -CAcreateserial -out tls.crt -days 1650 -sha256
+   openssl x509 -req -in tls.csr -CA myCA.pem -CAkey myCA.key -CAcreateserial -out tls.crt -days 1650 -sha256
 
-```
+   ```
    Signature ok
    subject=C = US, ST = KS, L = Leawood, O = IBM, OU = Data and AI, CN = api.smartcare.cp.fyre.ibm.com
    Getting CA Private Key
    Enter pass phrase for myCA.key:
-```
+   ```
 
 
 3. Create Application
@@ -124,4 +124,4 @@ openssl x509 -req -in tls.csr -CA myCA.pem -CAkey myCA.key -CAcreateserial -out 
 
 
 
-   
+ 
