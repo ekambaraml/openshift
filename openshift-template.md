@@ -1,0 +1,1 @@
+# OpenShift template - Sample Applications
